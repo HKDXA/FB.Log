@@ -27,6 +27,21 @@ function myFunction() {
     video.pause();
   }
 }
+      
+      
+    var obj1 = { handle: 'Android' };
+ var value = 'Test';
+ window.handle = 'Window';
+ function whoAmI(param) {
+ return this.handle + ' ' + param;
+ }
+ obj1.identifyMe = whoAmI;
+ alert(whoAmI(value));
+ alert(obj1.identifyMe(value));
+ alert(whoAmI.call(obj2, value));
+ alert(whoAmI.apply(obj3, [value]));   
+      
+      
 </script>
 
 
